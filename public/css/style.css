@@ -1,0 +1,103 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed; /* Make the sidebar fixed */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Add scroll if the content is too long */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    display: block; /* Ensure full-width clickable links */
+}
+
+.sidebar a:hover {
+    color: #fff;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Main content styling with curves */
+.content {
+    margin-left: 250px; /* Offset content by the sidebar's width */
+    padding: 20px;
+    background-color: #f4f4f9;
+    width: calc(100% - 250px); /* Adjust content width */
+    overflow-y: auto; /* Allow scrolling in the content area */
+    border-top-left-radius: 25px; /* Top left curve */
+    border-bottom-left-radius: 25px; /* Bottom left curve */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Table styling */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: black;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e7ff;
+}
